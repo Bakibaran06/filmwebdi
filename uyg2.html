@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adınız Soyadınız burçlar Rehberi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #8e2de2, #4a00e0); 
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a{
+            color: #4a00e0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #8e2de2;
+            text-decoration: underline;
+        }
+
+        main{
+            padding: 40px 10%;
+        }
+        .zodiac-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px, 1fr)); 
+            gap: 25px;
+        }
+        .zodiac-card {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .zodiac-card: hover {
+            transform: translate(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+        }
+
+        .zodiac-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .zodiac-info{
+            padding: 20px;
+        }
+
+        .zodiac-info h2 {
+            color: #4a00e0;
+            margin-bottom: 10px;
+        }
+
+        .zodiac-info p{
+            font-size: 0.95em;
+            line-height: 1.5em; 
+        }
+
+        footer{
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer a{
+            color: #b388ff;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+        }
+        </style>
+     </head>
+   <body>
+    <header>
+        <h1>Burçlar Rehberi</h1>
+        <p>karakterinizi ve Geleceğinizi yıldızlarda keşfedin</p>
+    </header>
+
+    <nav>
+        
+        <a href="#koc">Koç</a>
+        <a href="#Boga">Boğa</a>
+        <a href="#İkizler">İkizler</a>
+        <a href="#Yengec">Yenegeç</a>
+        <a href="#Aslan">Aslan</a>
+        <a href="Basak">Başak</a>
+        <a href="#Terazi">Terazi</a>
+        <a href="#Akrep">Akrep</a>
+        <a href="#Yay">Yay</a>
+        <a href="#Oglak">Oğlak</a>
+        <a href="#Kova">kova</a>
+        <a href="#Balik">Balık</a>
+        
+    </nav>
+
+    <main>
+        <div class="zodiac-grid">
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/aries.jpeg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Koç Burcu</h2>
+                    <p><b>21 Mart - 19 Nisan</b><br>Ateş grubuna ait olan koç burcu enerjik, lider ruhlu ve cesurdur. Yeni başlabgıçlar yapmaktan korkmaz, risk almayı sever. Kararlılığı sayesinde hedeflerine ulaşmakta zorlanmaz.</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/gemini.jpeg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Boğa Burucu</h2>
+                    <p><b>20 Nisan - 20 Mayıs</b><br>Toprak gurubundan olan Boğa burcu,sabırlı, güvenilir ve kararlıdır.Rahatına düşkündür ve estetik değerlere önem verir. Huzulu bir yaşam sürmeyi tercih eder, sadık ve sevgi doludur.</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/ikiz.webp" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>İkizler Burcu</h2>
+                    <p><b>21 Mayıs - 20 Haziran</b><br>Hava grubuna ait ikizler burcu meraklı, zeki ve ilerişimi güçlüdür. Farklı alanlara ilgi duyar,sürekli öğrenmek ister. Sosyal çevresş geniştir ve enerjisiyle etrafına neşe saçar.</p>
+                </div>
+            </div>
+
+              <div class="zodiac-card" id="koc">
+                <img src="img/yenegeç.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Yengeç Burcu</h2>
+                    <p><b>20 Haziran - 23 Temmuz</b><br>Yengeç'ler duygusallıkları ve duyarlılıkları ile tanınırlar. Çevresindeki her insandan da aynı hassasiyeti bekledikleri için, kolay geçinilebilir kişiler değildir. İyi günlerinde neşeli, iyi kalpli, yardımsever, düşünceli ve anlayışlıdırlar.</p>
+                </div>
+            </div>
+            
+                        
+                
+            
+            <div class="zodiac-card" id="koc">
+                <img src="img/aslan.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Aslan Burcu</h2>
+                    <p><b>24 Temmuz - 23 Ağustos</b><br>Aslan burcunun insanları, kendilerine güvenen, cesur ve doğal liderler olarak bilinirler. Ateş elementiyle ilişkilendirilen Aslan bireyleri, adeta içlerinde yanan bir alev gibi enerjik ve tutkuludurlar..</p>
+                </div>
+            </div>
+               
+            <div class="zodiac-card" id="koc">
+                <img src="img/baaşık.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Başak Burcu</h2>
+                    <p><b>24 Auğstos - 23 Eylül</b><br>Başak burcu, detaycılığı ve analitik düşünce yapısıyla tanınır. Başak burcu insanları, mantıklı ve pratik yaklaşımıyla sorunlara çözüm üretmede ustadır. Başak burcunun özellikleri arasında dikkatli ve özenli olma, küçük detaylara bile büyük önem verme bulunur..</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/tereazi.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Terazi Burcu</h2>
+                    <p><b>24 Eylül - 23 Ekim</b><br>erazi burçları genel olarak akıllı, mantıklı ve aşk dolu özelliklere sahiplerdir. Terazi burçları hayallerine ulaşmak için çok çalışırlar. Terazi burçları genel olarak uzlaşı yanlısı ve kibar özellikleri ile bilinirler.</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/akrep.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Akrep Burcu</h2>
+                    <p><b>20 Nisan - 20 Mayıs</b><br>Akrepler, derin duyguları ve sezgileriyle bilinirler. Bu burçta doğan kişiler, genellikle kararlıdır ve hedeflerine ulaşmak için gereken tüm çabayı gösterirler. Akrep burcu erkeği, gizemli ve güçlü bir karaktere sahiptir. Onlar için güven çok önemlidir; bu nedenle, ilişkilerinde sadık ve bağlıdırlar.</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/yay.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Yay Burcu</h2>
+                    <p><b>23 Kasım - 22 Aralık</b><br>Bu burç, enerjik, iyimser, açık fikirli ve maceracı bir kişiliğe sahiptir. İşte Yay burcunun belirgin özellikleri: Özgürlük Tutkusu: Yay burcu, bağımsızlığına düşkündür. Yeniliklere açık, özgür ruhlu bir bireydir ve kısıtlamalardan hoşlanmaz..</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/oglak.webp" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Oğlak Burcu</h2>
+                    <p><b>23 Aralık - 20 Ocak</b><br>emel özellikleri arasında kararlılık, disiplin, ciddiyet ve hedefe yönelik bir bakış açısı bulunur. Oğlak burcu bireyleri genellikle çalışkan, sorumluluk sahibi ve liderlik özellikleriyle bilinir. Oğlak Burcunun Gezegeni: Oğlak burcunun yönetici gezegeni Satürn'dür.</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/kova.jpg" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Kova Burcu</h2>
+                    <p><b>20 Ocak - 19 Şubat</b><br>TKova burcu, yenilikçi, özgür ruhlu ve bağımsız karakteriyle bilinir. Bu burçta doğan insanlar, genellikle toplumsal meselelerle ilgilenir ve insan haklarına büyük önem verirler..</p>
+                </div>
+            </div>
+
+            <div class="zodiac-card" id="koc">
+                <img src="img/balık.webp" alt="koç Burcu">
+                <div class="zodiac-info">
+                    <h2>Balık Burcu</h2>
+                    <p><b>20 Şubat - 21 Mart</b><br>Balık burcu oldukça aşırı hassas bir burçtur, ayrıca özellikleri bakımından çok kırılgan ve hassastır. Çok yaratıcı ve sanatsal bir yapıya sahip olmalarına rağmen, sergiledikleri narin ve düşünceli zihniyetleri nedeniyle işleri ertelemede gerçekten iyidirler.</p>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+    </main>
+    
+</body>
+</html>
+        
+
+
+
+        
